@@ -33,6 +33,6 @@ Execute the script, passing either an absolute path to your repo, or one relativ
 $ ./git_contributor_commit_days_calculator.sh REPO_PATH [CONFIG_PATH] [OUTPUT_PATH]
 ```
 
-The script also takes two optional arguments: paths to your YAML configuration file and the path where you'd like the script to generate its output CSV file. If not provided, the default names are git_contributors.yaml and git_contributors.csv, and they'll be created in whatever directory you call the script from.
+The script also takes two optional arguments: paths to your YAML configuration file and the path where you'd like the script to generate its output CSV file. If not provided, the default names are `git_contributors.yaml` and `git_contributors.csv`, and it's assumed both should be in your current working directory.
 
 The generated CSV has one row per identified contributor and  four columns: Name, First Commit, Last Commit, and Commit Days
