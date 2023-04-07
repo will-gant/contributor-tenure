@@ -1,6 +1,6 @@
 # Git Former Contributor Commit Days Calculator
 
-Hacked together bash script to calculate contributor turnover on git projects. Takes the dates of the first and last commits by each ex-contributor to a git repo (anyone who hasn't committed in the last 90 days). 
+Hacked together bash script to calculate contributor turnover on git projects. Generates a CSV file with the dates of the first and last commits by each ex-contributor to a git repo (anyone who hasn't committed in the last 90 days), along with the difference between those dates in days. Also outputs an overall average for the repo.
 
 ## Prerequisites
 * Bash 4.0.0 or later
@@ -9,7 +9,7 @@ Hacked together bash script to calculate contributor turnover on git projects. T
 
 ## Manual Preparation
 
-Because engineers are tricksy and like to change the email and name in their local git config at random intervals - and therefore any analysis that doesn't take account of that is pretty useless - this script depends on a human first manually putting together a yaml file like this:
+Because engineers are tricksy and like to change the email and name in their local git config at random intervals - and therefore any analysis that doesn't take account of that is massively unreliable - this script depends on a human first manually putting together a yaml file like this:
 
 ```yaml
 emails:
