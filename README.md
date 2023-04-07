@@ -3,9 +3,9 @@
 Hacked together bash script to calculate contributor turnover on git projects. Takes the dates of the first and last commits by each ex-contributor to a git repo (anyone who hasn't committed in the last 90 days). 
 
 ## Prerequisites
-Bash 4.0.0 or later
-Git
-yq (version 4.x)
+* Bash 4.0.0 or later
+* Git
+* [yq](https://mikefarah.gitbook.io/yq/) (version 4.x)
 
 ## Manual Preparation
 
