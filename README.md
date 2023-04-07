@@ -30,9 +30,9 @@ This is a mapping of the names and email addresses that appear in a git commit t
 Execute the script, passing either an absolute path to your repo, or one relative to your current working directory.
 
 ```console
-$ ./git_contributor_commit_days_calculator.sh path/to/repo
+$ ./git_contributor_commit_days_calculator.sh REPO_PATH [CONFIG_PATH] [OUTPUT_PATH]
 ```
 
-The script takes two optional arguments: paths to your YAML configuration file and the path where you'd like the script to generate its output CSV file. If not provided, the default names are git_contributors.yaml and git_contributors.csv, and they'll be created in whatever directory you call the script from.
+The script also takes two optional arguments: paths to your YAML configuration file and the path where you'd like the script to generate its output CSV file. If not provided, the default names are git_contributors.yaml and git_contributors.csv, and they'll be created in whatever directory you call the script from.
 
 The generated CSV has one row per identified contributor and  four columns: Name, First Commit, Last Commit, and Commit Days
