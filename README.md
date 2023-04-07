@@ -30,7 +30,7 @@ You can generate a template like the above with the committer emails and names f
 ```console
 $ ./generate-template.sh REPO_PATH [OUTPUT PATH]
 
-Created a template containing 152 emails and 178 names at /Users/will/Workspace/git_contributors.yaml
+Created a template containing 152 emails and 178 names at ~/Workspace/git_contributors.yaml
 ```
 
 ## Running the Script
@@ -39,6 +39,22 @@ Execute the script from anywhere, passing either an absolute path to your repo, 
 
 ```console
 $ ./git_contributor_commit_days_calculator.sh REPO_PATH [CONFIG_PATH] [OUTPUT_PATH]
+```
+
+Example:
+```
+$ ./git_contributor_commit_days_calculator.sh ~/Workspace/big/repo ~/Documents/git_contributors.yaml ~/Documents/git_contributors.csv
+
+grabbing all unique emails from git log...
+found 152 unique emails in git log, and 127 emails and 118 names that a nice human has configured for me in ~/Documents/git_contributors.yaml
+using an excruciatingly inefficient technique to map committer email addresses and names to known contributors in ~/Documents/git_contributors.yaml and calculating first and last commit dates...
+calculating total commit days for each contributor...
+Unable to identify 14 contributors :-(
+Ignored 22 committers who have committed in the last 90 days
+Average commit days: 430
+Total commit days: 24953
+Total contributors: 58
+Output CSV: ~/Documents/git_contributors.csv
 ```
 
 The script also takes two optional arguments: paths to your YAML configuration file and the path where you'd like the script to generate its output CSV file. If not provided, the default names are `git_contributors.yaml` and `git_contributors.csv`, and it's assumed both should be in your current working directory.
