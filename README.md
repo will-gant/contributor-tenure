@@ -30,7 +30,7 @@ You can generate a template like the above with the committer emails and names f
 ```console
 $ ./generate-template.sh REPO_PATH [OUTPUT PATH]
 
-Created a template containing 152 emails and 178 names at /Users/will/Workspace/marketdojo/git_contributors.yaml
+Created a template containing 152 emails and 178 names at /Users/will/Workspace/git_contributors.yaml
 ```
 
 ## Running the Script
