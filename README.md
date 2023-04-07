@@ -4,7 +4,7 @@ Hacked together bash script to calculate contributor turnover on git projects. G
 
 ## Prerequisites
 * Bash 4.0.0 or later
-* Git
+* Git (version 2.x)
 * [yq](https://mikefarah.gitbook.io/yq/) (version 4.x)
 
 ## Manual Preparation
