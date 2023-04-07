@@ -25,6 +25,14 @@ names:
 
 This is a mapping of the names and email addresses that appear in a git commit to a person's _real_ name (or any other unique identifier - if you're pretty sure names/emails relate to the same person, it's better to map them to _something_ than nothing). When trying to identify a contributor, the script first checks to see if their committer email maps to an email in the yaml config. If it doesn't, the script then checks to see if the committer's name maps. If neither do, we skip that contributor and they're excluded from the average turnover we calculate at the end.
 
+You can generate a template like the above with the committer emails and names for your repo, with all values set to `null`, by running the following (the output path is optional - if unspecified the current directory will be used):
+
+```console
+$ ./generate-template.sh REPO_PATH [OUTPUT PATH]
+
+Created a template containing 152 emails and 178 names at /Users/will/Workspace/marketdojo/git_contributors.yaml
+```
+
 ## Running the Script
 
 Execute the script from anywhere, passing either an absolute path to your repo, or one relative to your current working directory.
