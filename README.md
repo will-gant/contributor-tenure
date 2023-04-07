@@ -27,7 +27,7 @@ This is a mapping of the names and email addresses that appear in a git commit t
 
 ## Running the Script
 
-Execute the script, passing either an absolute path to your repo, or one relative to your current working directory.
+Execute the script from anywhere, passing either an absolute path to your repo, or one relative to your current working directory.
 
 ```console
 $ ./git_contributor_commit_days_calculator.sh REPO_PATH [CONFIG_PATH] [OUTPUT_PATH]
