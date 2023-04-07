@@ -42,7 +42,7 @@ $ ./git_contributor_commit_days_calculator.sh REPO_PATH [CONFIG_PATH] [OUTPUT_PA
 ```
 
 Example:
-```
+```console
 $ ./git_contributor_commit_days_calculator.sh ~/Workspace/big/repo ~/Documents/git_contributors.yaml ~/Documents/git_contributors.csv
 
 grabbing all unique emails from git log...
